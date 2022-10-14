@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0px;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0px auto;
+}
+
+nav{
+    position: absolute;
+    top: 120px;
+    right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 0px 0px 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: gold;
+}
+
+nav a:active{
+    color: goldenrod;
+}
+
+header img{
+	margin-left: 60px;
+}
+
+main{
+    width: 940px;
+    margin: auto;
+}
+
+form{
+    margin: 40px 0px;
+}
+
+form label{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.caixa-res{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+#email{
+    margin-left: 100px;
+}
+
+#tel{
+    margin-left: 85px;
+}
+
+#msg{
+    margin-left: 65px;
+}
+
+.msg{
+    vertical-align: top;
+}
+
+.contato legend{
+    font-size: 18px;
+    padding: 20px 0px 20px 10px;
+}
+
+.radio1{
+    padding: 0px 0px 10px 10px;
+}
+
+.radio2{
+    padding: 0px 0px 10px 10px;
+}
+
+.radio3{
+    padding: 0px 0px 20px 10px;
+}
+
+.horario{
+    margin: 0px 0px 20px 10px;
+    font-size: 18px;
+}
+
+.horario p{
+    display: inline;
+    margin-right: 10px;
+}
+
+.horario select{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox{
+    margin: 20px;
+}
+
+#enviar{
+    width: 40%;
+    padding: 15px 0px;
+    margin: 30px 0px 0px 10px;
+    font-size: 18px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+#enviar:hover{
+    background-color: darkorange;
+    transition: 0.5s all;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 20px 0px 40px 10px;
+}
+
+thead{
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background: url("../img/bg.jpg");
+    padding: 40px 0px;
+}
+
+footer p{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
