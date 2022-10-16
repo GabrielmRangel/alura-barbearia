@@ -48,6 +48,7 @@ nav a:active{
 
 header img{
 	margin-left: 60px;
+    width: 120px;
 }
 
 .produtos{
@@ -99,10 +100,23 @@ header img{
 footer{
     text-align: center;
     background: url("../img/bg.jpg");
-    padding: 40px 0px;
+    padding: 20px 0px;
+}
+
+.rodape{
+	width: 950px;
+	margin: auto;
+}
+
+footer img{
+    width: 60px;
+    margin: 0px 8px;
 }
 
 footer p{
+	display: inline;
+	position: relative;
+	bottom: 32px;
     color: white;
     font-size: 13px;
     margin-top: 20px;

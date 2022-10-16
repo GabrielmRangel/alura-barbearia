@@ -50,6 +50,7 @@ nav a:active{
 
 header img{
 	margin-left: 60px;
+	width: 120px;
 }
 
 /* CSS da página inicial */
@@ -81,7 +82,9 @@ header img{
 .utensilios{
 	width: 120px;
 	float: left;
-	margin: 0px 20px 20px 20px;
+	margin: 0px 20px 20px 0px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
 }
 
 .principal p {
@@ -166,7 +169,20 @@ footer{
     padding: 20px 0px;
 }
 
+.rodape{
+	width: 950px;
+	margin: auto;
+}
+
+footer img{
+    width: 60px;
+	margin: 0px 8px;
+}
+
 footer p{
+	display: inline;
+	position: relative;
+	bottom: 32px;
     color: white;
     font-size: 13px;
     margin-top: 20px;
