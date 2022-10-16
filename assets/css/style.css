@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho */
 header{
     background-color: #BBBBBB;
     padding: 20px 0px;
@@ -11,6 +18,7 @@ header{
     margin: 0px auto;
 }
 
+/* Links de navegação */
 nav{
     position: absolute;
     top: 120px;
@@ -44,35 +52,76 @@ header img{
 	margin-left: 60px;
 }
 
-#banner {
-	width:100%;
-	margin-bottom: -5px;
+/* CSS da página inicial */
+.banner {
+	margin: auto;
+	width: 950px;
 }
 
+.banner img{
+	width: 100%;
+	margin: 20px 0px 40px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.308);
+}
+
+/* Sobre a Barbearia */
 .principal{
-	background: #CCCCCC;
-	padding: 30px;
+	width: 950px;
+	margin: 0px auto 30px;
 }
 
-.titulo-centralizado {
+.titulo-principal {
 	text-align: center;
-	margin: 10px 0px 30px 0px;
-	font-size: 28px;
+	margin: 10px 0px 1em;
+	font-size: 2em;
 	font-weight: bold;
 }
 
+.utensilios{
+	width: 120px;
+	float: left;
+	margin: 0px 20px 20px 20px;
+}
+
 .principal p {
-	text-align: center;
-	margin-bottom: 20px;
+	text-align: left;
+	margin-bottom: 1em;
 	font-size: 18px;
 }
 
-#missao {
+.principal strong{
+	font-weight: bold;
+}
+
+.principal em{
+	font-style: italic;
 	font-size: 20px
 }
 
-em strong {
-	color: #FF0000;
+/* Mapa da Barbearia */
+.mapa{
+	width: 950px;
+	text-align: center;
+	margin: auto;
+	padding: 4em 0px;
+}
+
+.mapa p{
+	font-size: 20px;
+	margin-bottom: 2em;
+}
+
+.mapa iframe{
+	border-radius: 10px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.308);
+}
+
+/* Benefícios */
+.beneficios {
+	width: 950px;
+	margin: 0px auto 30px;
+	padding: 20px;
 }
 
 .itens {
@@ -82,23 +131,35 @@ em strong {
 	font-weight: 500;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
-}
-
 .beneficios ul {
 	display: inline-block;
 	vertical-align: top;
-	width: 30%;
-	margin-right: 15%;
+	width: 28%;
+	margin-right: 8%;
+	margin-top: 30px;
 	list-style: disc;
 }
 
 .imagembeneficios {
-	width: 50%;
+	width: 60%;
+	margin-top: 30px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.308);
 }
 
+/* Vídeo */
+.video{
+	width: 950px;
+	margin: 60px auto;
+}
+
+.video iframe{
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.308);
+}
+
+/* Rodapé */
 footer{
     text-align: center;
     background: url("../img/bg.jpg");
