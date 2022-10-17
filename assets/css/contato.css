@@ -19,7 +19,7 @@ header{
 
 nav{
     position: absolute;
-    top: 120px;
+    top: 86px;
     right: 40px;
 }
 
@@ -52,12 +52,16 @@ header img{
 }
 
 main{
-    width: 940px;
+    width: 800px;
     margin: auto;
 }
 
 form{
     margin: 40px 0px;
+}
+
+form p{
+    margin: auto;
 }
 
 form label{
@@ -92,7 +96,8 @@ form label{
 }
 
 #msg{
-    margin-left: 85px;
+    margin: 0px 0px 16px 85px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.308);
     border: #BBBBBB;
@@ -174,13 +179,27 @@ td, th{
     text-align: center;
 }
 
+/* Rodapé */
 footer{
     text-align: center;
     background: url("../img/bg.jpg");
-    padding: 40px 0px;
+    padding: 20px 0px;
+}
+
+.rodape{
+	width: 950px;
+	margin: auto;
+}
+
+footer img{
+    width: 60px;
+    margin: 0px 8px;
 }
 
 footer p{
+	display: inline;
+	position: relative;
+	bottom: 32px;
     color: white;
     font-size: 13px;
     margin-top: 20px;

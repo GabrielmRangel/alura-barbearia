@@ -19,7 +19,7 @@ header{
 
 nav{
     position: absolute;
-    top: 120px;
+    top: 86px;
     right: 40px;
 }
 
@@ -34,7 +34,6 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
-
 }
 
 nav a:hover{
@@ -52,8 +51,8 @@ header img{
 }
 
 .produtos{
-    width: 940px;
-    margin: 0 auto;
+    width: 950px;
+    margin: auto;
     padding: 50px 0;
 }
 
@@ -72,14 +71,11 @@ header img{
 
 .produtos li:hover{
     border: solid 2px gold;
+    margin-bottom: -4px;
 }
 
 .produtos li:active{
     border-color: goldenrod;
-}
-
-.produtos li:hover h2{
-    font-size: 34px;
 }
 
 .produtos h2{
@@ -97,10 +93,12 @@ header img{
     margin-top: 10px;
 }
 
+/* Rodapé */
 footer{
     text-align: center;
     background: url("../img/bg.jpg");
     padding: 20px 0px;
+    margin-top: 90px;
 }
 
 .rodape{

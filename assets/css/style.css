@@ -8,7 +8,7 @@ body{
 
 /* Cabeçalho */
 header{
-    background-color: #BBBBBB;
+    background: linear-gradient(-26deg,black, #888888 50%, #fefefe);
     padding: 20px 0px;
 }
 
@@ -21,7 +21,7 @@ header{
 /* Links de navegação */
 nav{
     position: absolute;
-    top: 120px;
+    top: 86px;
     right: 40px;
 }
 
@@ -32,7 +32,7 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: #000000;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
@@ -61,7 +61,7 @@ header img{
 
 .banner img{
 	width: 100%;
-	margin: 20px 0px 40px;
+	margin: 20px 0px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.308);
 }
@@ -90,7 +90,7 @@ header img{
 .principal p {
 	text-align: left;
 	margin-bottom: 1em;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .principal strong{
@@ -102,29 +102,15 @@ header img{
 	font-size: 20px
 }
 
-/* Mapa da Barbearia */
-.mapa{
-	width: 950px;
-	text-align: center;
-	margin: auto;
-	padding: 4em 0px;
-}
-
-.mapa p{
-	font-size: 20px;
-	margin-bottom: 2em;
-}
-
-.mapa iframe{
-	border-radius: 10px;
-	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.308);
-}
-
 /* Benefícios */
 .beneficios {
 	width: 950px;
-	margin: 0px auto 30px;
+	margin: 0px auto 20px;
 	padding: 20px;
+}
+
+.beneficios h3{
+	margin-bottom: 50px;
 }
 
 .itens {
@@ -132,28 +118,29 @@ header img{
 	margin-left: 40px;
 	font-size: 20px;
 	font-weight: 500;
+	line-height: 1.5;
 }
 
 .beneficios ul {
 	display: inline-block;
 	vertical-align: top;
-	width: 28%;
-	margin-right: 8%;
-	margin-top: 30px;
+	width: 32%;
+	margin: 24px 6% 0px;
 	list-style: disc;
 }
 
 .imagembeneficios {
-	width: 60%;
-	margin-top: 30px;
+	width: 38%;
+	margin-left: 100px;
 	border-radius: 10px;
 	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.308);
 }
 
 /* Vídeo */
 .video{
-	width: 950px;
-	margin: 60px auto;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
 }
 
 .video iframe{
@@ -162,16 +149,34 @@ header img{
 	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.308);
 }
 
+/* Mapa da Barbearia */
+.mapa{
+	width: 950px;
+	text-align: center;
+	margin: auto;
+	padding: 3em 0px;
+}
+
+.mapa p{
+	font-size: 22px;
+	margin-bottom: 2em;
+}
+
+.mapa iframe{
+	border-radius: 10px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.308);
+}
+
 /* Rodapé */
+.rodape{
+	width: 950px;
+	margin: auto;
+}
+
 footer{
     text-align: center;
     background: url("../img/bg.jpg");
     padding: 20px 0px;
-}
-
-.rodape{
-	width: 950px;
-	margin: auto;
 }
 
 footer img{

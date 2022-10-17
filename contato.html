@@ -1,116 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Barbearia Alura</title>
-    <link rel="shortcut icon" href="assets/img/favicon2.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/contato.css">
-</head>
-<body>
-    <header>
-        <div class="caixa">
-            <h1><img src="assets/img/logo.png" alt="Logo da Barbearia Alura"></h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Barbearia Alura</title>
+        <link rel="shortcut icon" href="assets/img/favicon2.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/contato.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="assets/img/logo.png" alt="Logo da Barbearia Alura"></h1>
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Serviços</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main>
-        <form>
-            <p>
-                <label for="nome">Nome e sobrenome: </label>
-                <input class="caixa-res" type="text" id="nome" placeholder="Seu nome e seu sobrenome" required>
-            </p>
+        <main>
+            <form>
+                <p>
+                    <label for="nome">Nome e sobrenome: </label>
+                    <input class="caixa-res" type="text" id="nome" placeholder="Seu nome e seu sobrenome" required>
+                </p>
 
-            <p>
-                <label for="email">E-mail: </label>
-                <input class="caixa-res" type="email" id="email" placeholder="seuemail@dominio.com" required>
-            </p>
+                <p>
+                    <label for="email">E-mail: </label>
+                    <input class="caixa-res" type="email" id="email" placeholder="seuemail@dominio.com" required>
+                </p>
 
-            <p>
-                <label for="tel">Telefone: </label>
-                <input class="caixa-res" type="tel" id="tel" placeholder="(99) 9.9999-9999" required>
-            </p>
+                <p>
+                    <label for="tel">Telefone: </label>
+                    <input class="caixa-res" type="tel" id="tel" placeholder="(99) 9.9999-9999" required>
+                </p>
 
-            <p>
-                <label class="msg" for="msg">Mensagem: </label>
-                <textarea id="msg" cols="64" rows="5" placeholder=" Deixe o seu textão aqui..."></textarea>
-            </p>
+                <p>
+                    <label class="msg" for="msg">Mensagem: </label>
+                    <textarea id="msg" cols="52" rows="5" placeholder=" Deixe o seu textão aqui..."></textarea>
+                </p>
 
-            <fieldset class="contato">
-                <legend>Como prefere o nosso contato?</legend>
+                <fieldset class="contato">
+                    <legend>Como prefere o nosso contato?</legend>
+                    
+                    <div class="radio">
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
+                    </div>
                 
-                <div class="radio">
-                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> E-mail</label>
-                </div>
-            
-                <div class="radio">
-                    <label for="radio-tel"><input type="radio" name="contato" id="radio-tel"> Telefone</label>
-                </div>
+                    <div class="radio">
+                        <label for="radio-tel"><input type="radio" name="contato" id="radio-tel"> Telefone</label>
+                    </div>
 
-                <div class="radio">
-                    <label for="radio-zap"><input type="radio" name="contato" id="radio-zap"> WhatsApp</label>
-                </div>
-            </fieldset>
+                    <div class="radio">
+                        <label for="radio-zap"><input type="radio" name="contato" id="radio-zap"> WhatsApp</label>
+                    </div>
+                </fieldset>
 
-            <fieldset class="horario">
-                <p>Qual horário prefere ser atendido?</p>
-                <select>
-                    <option value="Manhã">Manhã</option>
-                    <option value="Tarde">Tarde</option>
-                    <option value="Noite">Noite</option>
-                </select>
-            </fieldset>
+                <fieldset class="horario">
+                    <p>Qual horário prefere ser atendido?</p>
+                    <select>
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                    </select>
+                </fieldset>
 
-            <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
 
-            <p><input type="submit" value="Enviar formulário" id="enviar"></p>
-        </form>
+                <p><input type="submit" value="Enviar formulário" id="enviar"></p>
+            </form>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Dia</th>
-                    <th>Horário</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Terça</td>
-                    <td>9h às 20h</td>
-                </tr>
-                <tr>
-                    <td>Quarta</td>
-                    <td>9h às 20h</td>
-                </tr>
-                <tr>
-                    <td>Quinta</td>
-                    <td>9h às 20h</td>
-                </tr>
-                <tr>
-                    <td>Sexta</td>
-                    <td>9h às 20h</td>
-                </tr>
-                <tr>
-                    <td>Sábado</td>
-                    <td>9h às 19h</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
 
-    <footer>
-        <img src="assets/img/logo-branco.png" alt="Logo da Alura">
-        <p>&copy; Copyright Barbearia Alura</p>
-    </footer>
-</body>
+                <tbody>
+                    <tr>
+                        <td>Terça</td>
+                        <td>9h às 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quarta</td>
+                        <td>9h às 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quinta</td>
+                        <td>9h às 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sexta</td>
+                        <td>9h às 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sábado</td>
+                        <td>9h às 19h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <div class="rodape">
+                <img src="assets/img/logo-branco.png" alt="Logo da Alura">
+                
+                <p>&copy; Copyright Barbearia Alura</p>
+            </div>
+        </footer>
+    </body>
 </html>
