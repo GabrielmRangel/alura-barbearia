@@ -14,7 +14,7 @@ header{
 
 .caixa{
     position: relative;
-    width: 940px;
+    max-width: 940px;
     margin: 0px auto;
 }
 
@@ -36,7 +36,6 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
-
 }
 
 nav a:hover{
@@ -55,21 +54,21 @@ header img{
 
 /* CSS da página inicial */
 .banner {
-	margin: auto;
-	width: 950px;
+	margin: 0px auto 0px;
+	max-width: 950px;
 }
 
 .banner img{
 	width: 100%;
-	margin: 20px 0px;
-	border-radius: 10px;
+	border-radius: 0px 0px 10px 10px;
 	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.308);
 }
 
 /* Sobre a Barbearia */
 .principal{
-	width: 950px;
+	max-width: 960px;
 	margin: 0px auto 30px;
+	padding: 20px 20px 0px 20px;
 }
 
 .titulo-principal {
@@ -77,12 +76,13 @@ header img{
 	margin: 10px 0px 1em;
 	font-size: 2em;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.411);
 }
 
 .utensilios{
 	width: 120px;
 	float: left;
-	margin: 0px 20px 20px 0px;
+	margin: 0px 20px 20px 10px;
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
 }
@@ -104,13 +104,21 @@ header img{
 
 /* Benefícios */
 .beneficios {
-	width: 950px;
-	margin: 0px auto 20px;
-	padding: 20px;
+	max-width: 960px;
+	width: 100%;
+	margin: 0px auto 30px;
 }
 
 .beneficios h3{
 	margin-bottom: 50px;
+}
+
+.beneficios ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 36%;
+	margin: 28px 3% 0px;
+	list-style: none;
 }
 
 .itens {
@@ -121,12 +129,8 @@ header img{
 	line-height: 1.5;
 }
 
-.beneficios ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 32%;
-	margin: 24px 6% 0px;
-	list-style: disc;
+.itens::before{
+	content: "☆ ";
 }
 
 .imagembeneficios {
@@ -138,6 +142,7 @@ header img{
 
 /* Vídeo */
 .video{
+	max-width: 920px;
 	margin: auto;
 	padding: 20px;
 	text-align: center;
@@ -151,7 +156,7 @@ header img{
 
 /* Mapa da Barbearia */
 .mapa{
-	width: 950px;
+	max-width: 960px;
 	text-align: center;
 	margin: auto;
 	padding: 3em 0px;
@@ -163,6 +168,7 @@ header img{
 }
 
 .mapa iframe{
+	width: 100%;
 	border-radius: 10px;
 	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.308);
 }
@@ -191,4 +197,80 @@ footer p{
     color: white;
     font-size: 13px;
     margin-top: 20px;
+}
+
+/* Display para celular */
+@media screen and (max-width: 910px) {
+	.caixa, .principal, .beneficios, .mapa, .video {
+		width: auto;
+	}
+
+	/* Header */
+	nav{
+		top: 40px;
+		width: 120px;
+	}
+
+	nav li{
+		padding: 0px 0px 20px;
+	}
+
+	header img{
+		position: relative;
+		left: -30px;
+	}
+
+	/* Texto principal */
+	.utensilios{
+		display: none;
+	}
+
+	.principal p{
+		text-align: left;
+		padding: 0px 8px 0px 8px;
+	}
+
+	/* Sessão benefícios */
+	.beneficios{
+		margin: 20px auto 0px;
+		width: 98vw;
+	}
+
+	.beneficios h3{
+		margin-bottom: 20px;
+	}
+
+	.imagembeneficios{
+		display: block;
+		margin: 0px auto 10px;
+		width: 100%;
+	}
+
+	.beneficios ul{
+		display: inline;
+	}
+
+	.beneficios li{
+		margin-left: 1ZX 0px;
+	}
+
+	/* Sessão vídeo */
+	.video h3{
+		margin-bottom: 10px;
+	}
+
+	.video iframe{
+		height: 52vw;
+		width: 86vw;
+	}
+
+	/* Mapa */
+	.mapa{
+		padding: 0px 10px 30px 10px;
+	}
+
+	/* Footer */
+	.rodape{
+		width: 100%;
+	}
 }

@@ -51,9 +51,9 @@ header img{
 }
 
 .produtos{
-    width: 950px;
+    max-width: 960px;
     margin: auto;
-    padding: 50px 0;
+    padding: 95px 0;
 }
 
 .produtos li{
@@ -98,11 +98,11 @@ footer{
     text-align: center;
     background: url("../img/bg.jpg");
     padding: 20px 0px;
-    margin-top: 90px;
+    /* margin-top: 90px; */
 }
 
 .rodape{
-	width: 950px;
+	max-width: 960px;
 	margin: auto;
 }
 
@@ -117,5 +117,42 @@ footer p{
 	bottom: 32px;
     color: white;
     font-size: 13px;
-    margin-top: 20px;
+}
+
+/* Display para celular */
+@media screen and (max-width: 910px) {
+	.caixa{
+		width: auto;
+	}
+
+	/* Header */
+	nav{
+		top: 40px;
+		width: 120px;
+	}
+
+	nav li{
+		padding: 0px 0px 20px;
+	}
+
+	header img{
+		position: relative;
+		left: -30px;
+	}
+
+    /* Produtos */
+    .produtos{
+        padding: 10px;
+    }
+
+    .produtos li{
+        display: block;
+        width: 92vw;
+        margin-bottom: 20px;
+    }
+
+    /* Footer */
+	.rodape{
+		width: 100%;
+	}
 }

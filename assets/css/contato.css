@@ -52,7 +52,7 @@ header img{
 }
 
 main{
-    width: 800px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -203,4 +203,83 @@ footer p{
     color: white;
     font-size: 13px;
     margin-top: 20px;
+}
+
+/* Display para celular */
+@media screen and (max-width: 910px) {
+	.caixa, form{
+		width: auto;
+	}
+
+	/* Header */
+	nav{
+		top: 40px;
+		width: 120px;
+	}
+
+	nav li{
+		padding: 0px 0px 20px;
+	}
+
+	header img{
+		position: relative;
+		left: -30px;
+	}
+
+    /* Fomulário */
+    form{
+        margin: 0px;
+        padding: 20px 10px;
+    }
+
+    #nome{
+        display: block;
+        margin: 10px 0px;
+        width: 84vw;
+    }
+
+    #email{
+        display: block;
+        margin: 10px 0px;
+        width: 84vw;
+    }
+
+    #tel{
+        display: block;
+        margin: 10px 0px;
+        width: 84vw;
+    }
+
+    #msg{
+        display: block;
+        margin: 10px 0px;
+        width: 84vw;
+    }
+
+    /* Horário */
+    .horario{
+        margin: 0px;
+        padding: 20px 10px;
+    }
+
+    .horario select{
+        display: block;
+        margin: 20px 0px 0px;
+    }
+
+    /* Checkbox */
+    .checkbox{
+        margin: 0px;
+    }
+
+    /* Enviar */
+    #enviar{
+        width: 84vw;
+        margin: 20px 0px 0px 10px;
+    }
+
+    /* Footer */
+	.rodape{
+		width: 100%;
+	}
 }
